@@ -1,0 +1,109 @@
+/* .register-user-container {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-user-container h1 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-user-form .label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #292929;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #a78bfa;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} */
+
+.login-container {
+  background: #1e1e1e; /* Contenedor oscuro */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  color: #ffffff; /* Texto blanco */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #b3b3b3; /* Texto gris claro */
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333333; /* Borde oscuro */
+  border-radius: 8px;
+  background: #2c2c2c; /* Fondo de input oscuro */
+  color: #ffffff; /* Texto blanco */
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #7f57ff; /* Resaltado violeta */
+  box-shadow: 0 0 5px rgba(127, 87, 255, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7f57ff; /* Botón violeta */
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #a084ff; /* Tonalidad más clara al pasar */
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}

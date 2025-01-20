@@ -1,0 +1,89 @@
+.login-container {
+  background: #1e1e1e; /* Contenedor oscuro */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  color: #ffffff; /* Texto blanco */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #b3b3b3; /* Texto gris claro */
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333333; /* Borde oscuro */
+  border-radius: 8px;
+  background: #2c2c2c; /* Fondo de input oscuro */
+  color: #ffffff; /* Texto blanco */
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #7f57ff; /* Resaltado violeta */
+  box-shadow: 0 0 5px rgba(127, 87, 255, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7f57ff; /* Botón violeta */
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #a084ff; /* Tonalidad más clara al pasar */
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: darkblue;
+}
+
+.forgot-register-user {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-register-user a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #7f57ff; /* Texto violeta */
+  transition: color 0.3s ease;
+}
+
+.forgot-register-user a:hover {
+  color: #a084ff;
+}

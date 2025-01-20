@@ -1,0 +1,17 @@
+<form [formGroup]="frmShippingQuote" (ngSubmit)="createShippingQuoteRequest()">
+  <div class="form-container">
+    <h2>Ingresa la información del envío</h2>
+
+    <div class="form-section">
+      <gooapp-shipping-quotes-route></gooapp-shipping-quotes-route>
+    </div>
+
+    <div class="form-section">
+      <goapp-shipping-quotes-package></goapp-shipping-quotes-package>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn quote">→ Cotizar</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,6 @@
+@goapp.webApi_HostAddress = http://localhost:5129
+
+GET {{goapp.webApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

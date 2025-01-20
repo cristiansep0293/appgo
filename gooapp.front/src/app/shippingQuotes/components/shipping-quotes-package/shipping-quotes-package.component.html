@@ -1,0 +1,56 @@
+<form [formGroup]="frmShippingQuotesPackage">
+  <h3>Paquete</h3>
+  <div class="form-row">
+    <input
+      type="number"
+      formControlName="declaredValue"
+      placeholder="Valor declarado*"
+    />
+    <input
+      type="text"
+      formControlName="contentPackage"
+      placeholder="Contenido del paquete*"
+    />
+  </div>
+  <div class="form-row">
+    <input type="number" formControlName="long" placeholder="Largo (cms)*" />
+    <input type="number" formControlName="broad" placeholder="Ancho (cms)*" />
+    <input type="number" formControlName="high" placeholder="Alto (cms)*" />
+  </div>
+  <div class="form-row">
+    <input type="number" formControlName="weight" placeholder="Peso (kg)*" />
+    <input
+      type="number"
+      formControlName="quantityPackages"
+      placeholder="Cantidad de paquetes*"
+      value="1"
+    />
+  </div>
+  <div class="form-row toggle-row">
+    <label class="toggle">
+      <input
+        type="checkbox"
+        [(ngModel)]="showCashOnDelivery"
+        formControlName="cashOnDelivery"
+      />
+      <span class="slider"></span>
+    </label>
+    <span>Recaudo contra entrega</span>
+  </div>
+  <div *ngIf="showCashOnDelivery">
+    <div class="form-row">
+      <input
+        type="number"
+        formControlName="valueCollect"
+        placeholder="Peso (kg)*"
+      />
+    </div>
+    <div class="form-row toggle-row">
+      <label class="toggle">
+        <input type="checkbox" formControlName="chargeShipping" />
+        <span class="slider"></span>
+      </label>
+      <span>Cobrar el envio a mi cliente</span>
+    </div>
+  </div>
+</form>

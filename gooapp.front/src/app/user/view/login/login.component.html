@@ -1,0 +1,32 @@
+<div class="login-container">
+  <h1>Iniciar Sesión</h1>
+  <form [formGroup]="frmLogin" (ngSubmit)="startSession()">
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input
+        type="email"
+        id="txtEmail"
+        formControlName="email"
+        class="input"
+        placeholder="ejemplo@correo.com"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input
+        type="password"
+        id="txtPassword"
+        formControlName="password"
+        class="input"
+        placeholder="Tu contraseña"
+      />
+    </div>
+    <button type="submit" class="login-btn">Ingresar</button>
+  </form>
+  <div class="forgot-register-user">
+    <a routerLink="/register-user" class="link" (click)="goRegisterUser()"
+      >Registrar usuario</a
+    >
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<form [formGroup]="frmShippingQuotesRoute">
+  <h3>Ruta</h3>
+  <div class="form-row">
+    <div class="form-group select-group">
+      <select
+        id="originDestination"
+        formControlName="originDestination"
+        required
+      >
+        <option value="" disabled selected>Ciudad de Origen/Recogida*</option>
+        <option *ngFor="let item of destinations" [value]="item.id">
+          {{ item.description }}
+        </option>
+      </select>
+    </div>
+    <div class="form-group select-group">
+      <select
+        id="deliveryDestination"
+        formControlName="deliveryDestination"
+        required
+      >
+        <option value="" disabled selected>Ciudad de Destino/Entrega*</option>
+        <option *ngFor="let item of destinations" [value]="item.id">
+          {{ item.description }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>
